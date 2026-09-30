@@ -1,13 +1,13 @@
 name: First Workflow
 on:
- push:
+  push: 
 jobs:
- build:
-   run-on: ubuntu-latest
-   steps:
-    - name: checkout repository
-      uses: actions/checkout@v4
-    - name: print welcome
-      run: echo "welcome to build"
-    - name: print present working directory
-      run: pwd
+  build:
+    run-on: ubuntu-latest
+    steps:
+     - name: checkout repository
+       uses: actions/checkout@v4
+     - name: print welcome
+       run: echo "welcome to build"
+     - name: print present working directory
+       run: pwd
